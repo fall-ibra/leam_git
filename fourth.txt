@@ -1,0 +1,86 @@
+
+Créations d'un autre fichier appelé fourth.txt
+Ajoutons fourth.txt à la staging area.
+(PS C:\Users\user\Desktop\leam_git\learn_git> git add fourth.txt
+fatal: pathspec 'fourth.txt' did not match any files)
+
+Vérifions avec le message "adding fourth.txt"
+(PS C:\Users\user\Desktop\leam_git\learn_git> git commit -m "adding fourth.txt"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+)
+Enlevons le fichier third.txt.
+(
+PS C:\Users\user\Desktop\leam_git\learn_git> git rm third.txt
+fatal: pathspec 'third.txt' did not match any files)
+Ajoutons cette modification à la staging area. (En utilisant la commande "git add")
+(
+   git remote add c:\Users\user\Desktop\leam_git\third.txt
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+  PS C:\Users\user\Desktop\leam_git\learn_git> git add third.txt
+fatal: pathspec 'third.txt' did not match any files
+
+  )
+  Commitons avec le message "removing third.txt".
+  (
+PS C:\Users\user\Desktop\leam_git\learn_git> git commit -a third.txt
+fatal: paths 'third.txt ...' with -a does not make sense
+ )
+ Vérifions vos commits en utilisant git log
+ (
+   PS C:\Users\user\Desktop\leam_git\learn_git> git log
+fatal: your current branch 'main' does not have any commits yet
+  )
+  Changeons nos paramètres globaux pour core.pager=cat 
+(
+ PS C:\Users\user\Desktop\leam_git\learn_git> git config --global core.pager cat
+)
+Écrivons la commande appropriée pour lister toutes les configurations globales pour git sur notre machine.
+(
+   PS C:\Users\user\Desktop\leam_git\learn_git> git config --global --list
+user.name=fall-ibra
+user.mail=fallibra25@gmail.com
+user.email=fallibra@gmail.com
+core.autocrif=true
+core.editor=code--wait
+core.autocrlf=true
+core.pager=cat
+alias.i=init. 
+)
+    nous pouvons taper git config --global pour savoir comment faire.
+   utilisons git clone
+(
+PS C:\Users\user\Desktop\leam_git\learn_git> git clone https://github.com/fall-ibra/leam_git.git
+Cloning into 'leam_git'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+PS C:\Users\user\Desktop\leam_git\learn_git>
+)
+utilisons git push
+(
+    
+PS C:\Users\user\Desktop\leam_git\learn_git> git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+)
