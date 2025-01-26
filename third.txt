@@ -1,0 +1,38 @@
+
+pour creer le repertoir "leam_git " on utilise le commande (mkdir learn_git)
+"PS C:\Users\user\Desktop\leam_git> mkdir learn_git
+
+
+    Répertoire : C:\Users\user\Desktop\leam_git
+
+
+Mode                 LastWriteTime         Length Name     
+----                 -------------         ------ ----     
+d-----        20/01/2025     20:54                learn_git "
+
+(cd learn_git ) c'est le commande de changement de repertoir"PS C:\Users\user\Desktop\leam_git> cd learn_git"
+fichier third.txt 
+Initialisons un dépôt git vide
+ (PS C:\Users\user\Desktop\leam_git\learn_git> git init       
+Initialized empty Git repository in C:/Users/user/Desktop/leam_git/learn_git/.git/)
+
+Ajoutons le fichier third.txt à la staging area.
+(PS C:\Users\user\Desktop\leam_git\learn_git> git add c:\Users\user\Desktop\leam_git\third.txt
+fatal: c:\Users\user\Desktop\leam_git\third.txt: 'c:\Users\user\Desktop\leam_git\third.txt' is outside repository at 'C:----                 -------------         ------ ----      
+d-----        20/01/2025     20:54                learn_git )
+
+Commitons avec le message "adding third.txt"
+(PS C.\Users\user\Desktop\leam_git\learn_git> git commit -m "adding third.txt"
+adding third.txt"
+On branch main
+
+On branch main
+On branch main
+
+Initial commit)
+
+ Vérifiez votre validation avec git log.
+(PS C:\Users\user\Desktop\leam_git\learn_git> git log
+fatal: your current branch 'main' does not have any commits yet)
+Créons un autre fichier appelé fourth.txt.
+
